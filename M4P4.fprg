@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M4P4"/>
+        <attribute name="authors" value="ksunn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-28 08:19:37 PM"/>
+        <attribute name="created" value="a3N1bm47U1VOTllFUElDR0FNRVI7MjAyNi0wMy0yODswODoxNTo1OSBQTTsyOTIw"/>
+        <attribute name="edited" value="a3N1bm47U1VOTllFUElDR0FNRVI7MjAyNi0wMy0yODswODoxOTozNyBQTTsxOzMwMjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="receivedPay, splitEven" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the amount you have received from your job: &quot;" newline="True"/>
+            <input variable="receivedPay"/>
+            <assign variable="splitEven" expression="receivedPay/3"/>
+            <output expression="&quot;The amount of money given to each person is $&quot; &amp;splitEven" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

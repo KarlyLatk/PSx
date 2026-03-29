@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M4P1"/>
+        <attribute name="authors" value="ksunn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-28 08:02:33 PM"/>
+        <attribute name="created" value="a3N1bm47U1VOTllFUElDR0FNRVI7MjAyNi0wMy0yODswNzo1NTowMyBQTTsyOTEy"/>
+        <attribute name="edited" value="a3N1bm47U1VOTllFUElDR0FNRVI7MjAyNi0wMy0yODswODowMjozMyBQTTsxOzMwMTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="exam1, exam2, totalScore" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter your first exam grade: &quot;" newline="True"/>
+            <input variable="exam1"/>
+            <output expression="&quot;Enter your second exam grade: &quot;" newline="True"/>
+            <input variable="exam2"/>
+            <assign variable="totalScore" expression="(exam1*.60)+(exam2*.40)"/>
+            <output expression="&quot;Your total exam score is &quot; &amp;totalScore" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
