@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M6P3"/>
+        <attribute name="authors" value="ksunn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-06 08:09:08 PM"/>
+        <attribute name="created" value="a3N1bm47U1VOTllFUElDR0FNRVI7MjAyNi0wNC0wNjswNzo0NzoyOSBQTTsyOTE4"/>
+        <attribute name="edited" value="a3N1bm47U1VOTllFUElDR0FNRVI7MjAyNi0wNC0wNjswODowOTowOCBQTTsxOzMwMjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="partNum, quantity" type="Integer" array="False" size=""/>
+            <declare name="unitCost, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a part number: &quot;" newline="True"/>
+            <input variable="partNum"/>
+            <output expression="&quot;Enter the quantity: &quot;" newline="True"/>
+            <input variable="quantity"/>
+            <if expression="partNum == 10 or partNum == 55">
+                <then>
+                    <assign variable="unitCost" expression="1.00"/>
+                </then>
+                <else>
+                    <if expression="partNum == 99">
+                        <then>
+                            <assign variable="unitCost" expression="2.00"/>
+                        </then>
+                        <else>
+                            <if expression="partNum == 80 or partNum == 70">
+                                <then>
+                                    <assign variable="unitCost" expression="3.00"/>
+                                </then>
+                                <else>
+                                    <assign variable="unitCost" expression="5.00"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="quantity * unitCost"/>
+            <output expression="&quot;Part number: &quot; &amp; partNum &amp; &quot;. Cost per unit: &quot; &amp; unitCost &amp;  &quot;. Total cost:&quot; &amp; total &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

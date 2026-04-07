@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M6P2"/>
+        <attribute name="authors" value="ksunn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-06 07:39:18 PM"/>
+        <attribute name="created" value="a3N1bm47U1VOTllFUElDR0FNRVI7MjAyNi0wNC0wNjswNzoxNjowMSBQTTsyOTA0"/>
+        <attribute name="edited" value="a3N1bm47U1VOTllFUElDR0FNRVI7MjAyNi0wNC0wNjswNzozNzo0OSBQTTs1O2tzdW5uO1NVTk5ZRVBJQ0dBTUVSOzIwMjYtMDQtMDY7MDU6MzY6MzQgUE07TTZQMS5mcHJnOzY3OTY="/>
+        <attribute name="edited" value="a3N1bm47U1VOTllFUElDR0FNRVI7MjAyNi0wNC0wNjswNzozOToxOCBQTTsyOzMwMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity, unitPrice, extendedPrice, tax, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the quantity of widgets: &quot;" newline="True"/>
+            <input variable="quantity"/>
+            <if expression="quantity &gt; 10000">
+                <then>
+                    <assign variable="unitPrice" expression="10"/>
+                </then>
+                <else>
+                    <if expression="quantity &gt;= 5000 and quantity &lt;= 10000">
+                        <then>
+                            <assign variable="unitPrice" expression="20"/>
+                        </then>
+                        <else>
+                            <assign variable="unitPrice" expression="30"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="extendedPrice" expression="quantity * unitPrice"/>
+            <assign variable="tax" expression="extendedPrice * 0.07"/>
+            <assign variable="total" expression="extendedPrice+tax"/>
+            <output expression="&quot;Extended price: &quot; &amp; extendedPrice &amp; &quot;. Tax: &quot; &amp; tax &amp; &quot;. Total: &quot; &amp; total &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
