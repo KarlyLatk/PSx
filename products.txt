@@ -1,0 +1,18 @@
+Widget
+10
+50
+Hammer
+2
+10
+Saw
+2
+50
+Toilet paper
+12
+20
+Paper towel roll
+12
+24
+Toothbrush
+5
+4
